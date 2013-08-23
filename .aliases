@@ -7,6 +7,10 @@ alias .....="cd ../../../.."
 alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
+# My environment navigation
+alias work="cd /var/www/htdocs/workareas/minh/ands/"
+alias play="cd /var/www/htdocs/workareas/minh/playground/"
+
 # programs
 alias slt='open -a "Sublime Text 2"'
 # also/or do this:
@@ -57,7 +61,6 @@ alias c='pygmentize -O style=monokai -f console256 -g'
 # Undo a `git push`
 alias undopush="git push -f origin HEAD^:master"
 
-
 # git root
 alias gr='[ ! -z `git rev-parse --show-cdup` ] && cd `git rev-parse --show-cdup || pwd`'
 
@@ -101,7 +104,7 @@ alias rot13='tr a-zA-Z n-za-mN-ZA-M'
 # Empty the Trash on all mounted volumes and the main HDD
 alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; rm -rfv ~/.Trash"
 
-# Hide/show all desktop icons (useful when presenting)
+# Hide/show all desktop icons (useful when presenting) for OSX
 alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
 alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
 
