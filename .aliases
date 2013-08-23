@@ -11,6 +11,10 @@ alias -- -="cd -"
 alias work="cd /var/www/htdocs/workareas/minh/ands/"
 alias play="cd /var/www/htdocs/workareas/minh/playground/"
 
+# My work environment quick alias
+alias git-frb="git fetch && git rebase origin/develop"
+alias git-p="git push origin develop"
+
 # programs
 alias slt='open -a "Sublime Text 2"'
 # also/or do this:
