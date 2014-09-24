@@ -21,6 +21,7 @@ Plugin 'mattn/emmet-vim'
 Plugin 'taglist.vim'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'tomasr/molokai'
+Plugin 'mileszs/ack.vim'
 
 call vundle#end()
 filetype plugin indent on
