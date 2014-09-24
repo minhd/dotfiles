@@ -9,7 +9,7 @@ alias -- -="cd -"
 
 # My environment navigation
 alias work="cd /var/www/htdocs/workareas/minh/ands/"
-alias play="cd /var/www/htdocs/workareas/minh/playground/"
+alias play="cd /Volumes/htdocs-devl-new/workareas/minh/playground/"
 
 # My work environment quick alias
 alias git-frb="git fetch && git rebase origin/develop"
