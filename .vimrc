@@ -20,6 +20,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'mattn/emmet-vim'
 Plugin 'taglist.vim'
 Plugin 'terryma/vim-multiple-cursors'
+Plugin 'tomasr/molokai'
 
 call vundle#end()
 filetype plugin indent on
