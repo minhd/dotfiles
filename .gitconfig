@@ -1,6 +1,6 @@
 [alias]
 	c = commit -am
-	up = pull
+	up = pull --rebase
 	p = push
 	s = status -s
 	df = diff --color --color-words --abbrev
