@@ -39,5 +39,7 @@ My basic setup is captured in `install-deps.sh` which adds homebrew, z, nave, et
 
 ```bash
 git clone git@github.com:minhd/dotfiles.git && cd dotfiles && ./sync.sh
+git clone https://github.com/minhd/dotfiles.git && cd dotfiles && ./sync.sh
+  html:5
 ```
 To update later on, just run the sync again.
