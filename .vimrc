@@ -78,6 +78,9 @@ let g:ctrlp_show_hidden = 1
 
 "Random Fixes
 let g:ctrlp_map = '<c-p>'
+nmap <c-s> :w<CR>
+vmap <c-s> <Esc><c-s>gv
+imap <c-s> <Esc><c-s>
 set noeb vb t_vb=               "Disable stupid annoying error sound
 set backspace=indent,eol,start  "Fix backspace
 set cmdheight=2                 "set command bar height
