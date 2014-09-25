@@ -40,6 +40,10 @@ My basic setup is captured in `install-deps.sh` which adds homebrew, z, nave, et
 ```bash
 git clone git@github.com:minhd/dotfiles.git && cd dotfiles && ./sync.sh
 git clone https://github.com/minhd/dotfiles.git && cd dotfiles && ./sync.sh
-  html:5
+```
+to install Vundle and use vim the way it's meant to use
+```bash
+git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+vim +PluginInstall +qall
 ```
 To update later on, just run the sync again.

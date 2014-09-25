@@ -1,7 +1,6 @@
 "Use vundle to install plugins. Requires vim 7.3 or greater
 "
-"Install Vundle using git clone 
-"https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+"Install Vundle using git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 "
 "Install some powerline patched fonts from 
 "https://github.com/Lokaltog/powerline-fonts to display special characters
