@@ -87,3 +87,8 @@ set cmdheight=2                 "set command bar height
 set lazyredraw                  "Fix redraw issue
 "CM CM will show and hide line numbers
 nmap <C-M><C-M> :set invnumber<CR>
+
+"Support for mouse
+set ttyfast
+set mouse=a
+set ttymouse=xterm2
