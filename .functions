@@ -3,6 +3,28 @@ function md() {
 	mkdir -p "$@" && cd "$@"
 }
 
+# Create a simple server
+function s(){
+  if [ $# -eq 0 ];then 
+    sudo python -m SimpleHTTPServer 80 
+  elif [ $1 ];then
+    sudo python -m SimpleHTTPServer $1
+  fi
+}
+
+# Create a simple server
+function phps(){
+  if [ $# -eq 0 ];then 
+    sudo php -S 127.0.0.1:80 -t .
+  elif [ $1 ];then
+    sudo php -S 127.0.0.1:"$1" -t .
+  fi
+}
+
+# Create a laravel artisan server
+function laravel-serve(){
+  sudo php artisan serve --port=80
+}
 
 # find shorthand
 function f() {
