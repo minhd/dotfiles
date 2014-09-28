@@ -25,6 +25,9 @@ else # OS X `ls`
 	colorflag="-G"
 fi
 
+# check if a process is running
+alias isr="ps -ef | grep"
+
 # List all files colorized in long format
 alias l="ls -l ${colorflag}"
 
