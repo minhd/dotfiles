@@ -18,6 +18,9 @@ alias core="cd /var/www/core"
 alias please=sudo
 alias hosts='sudo $EDITOR /etc/hosts'   # yes I occasionally 127.0.0.1 twitter.com ;)
 
+# Sublime Text 3 for mac
+alias sublime='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
+
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
 	colorflag="--color"
