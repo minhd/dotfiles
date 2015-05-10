@@ -94,6 +94,6 @@ set lazyredraw                  "Fix redraw issue
 nmap <C-M><C-M> :set invnumber<CR>
 
 "Support for mouse
-set ttyfast
-set mouse=a
-set ttymouse=xterm2
+"set ttyfast
+"set mouse=a
+"set ttymouse=xterm2
