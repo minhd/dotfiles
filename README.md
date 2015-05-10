@@ -10,8 +10,7 @@ My basic setup is captured in `install-deps.sh` which adds homebrew, z, nave, et
 ## overview of files
 
 ####  Automatic config
-* `.ackrc` - for ack (better than grep)
-* `.vimrc`, `.vim` - vim config, obv.
+* `.vimrc`, `.vim` - vim config, obv. comes with a million plugin so be warned
 
 #### shell environment
 * `.aliases`
@@ -25,13 +24,14 @@ My basic setup is captured in `install-deps.sh` which adds homebrew, z, nave, et
 * `install-deps.sh` - random apps i need installed
 * `.osx` - run on a fresh osx machine
 * `.brew` - homebrew initialization
+* `sync.sh` - manually sync what is new from the stuffs
+* `replace.sh` - replace what you have changed in your environment to the checkout so it can be easily commited to github
 
 #### git, brah
 * `.git`
 * `.gitattributes`
 * `.gitconfig`
 * `.gitignore`
-
 * `.inputrc` - config for bash readline
 
 
@@ -46,4 +46,4 @@ to install Vundle and use vim the way it's meant to use
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim +PluginInstall +qall
 ```
-To update later on, just run the sync again.
+To update later on, just run the sync again. To update, run replace
