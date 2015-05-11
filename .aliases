@@ -8,8 +8,8 @@ alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
 # My environment navigation
-alias minh="cd /var/www/htdocs/workareas/minh"
-alias mcore="cd /var/www/htdocs/workareas/minh/core"
+alias minh="cd /var/www/html/workareas/minh"
+alias mcore="cd /var/www/html/workareas/minh/core"
 
 # Common environment nagivation
 alias core="cd /var/www/core"
