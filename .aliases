@@ -10,9 +10,14 @@ alias -- -="cd -"
 # My environment navigation
 alias minh="cd /var/www/html/workareas/minh"
 alias mcore="cd /var/www/html/workareas/minh/core"
+alias mdev="cd ~/dev/"
+alias scdev="cd ~/dev/scotch-box/public/"
 
 # Common environment nagivation
 alias core="cd /var/www/core"
+
+# CentOS service alias
+alias svc="sudo /sbin/service"
 
 # be nice
 alias please=sudo
