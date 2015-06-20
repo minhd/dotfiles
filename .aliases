@@ -11,7 +11,6 @@ alias -- -="cd -"
 alias minh="cd /var/www/html/workareas/minh"
 alias mcore="cd /var/www/html/workareas/minh/core"
 alias mdev="cd ~/dev/"
-alias scdev="cd ~/dev/scotch-box/public/"
 
 # Common environment nagivation
 alias core="cd /var/www/core"
