@@ -5,3 +5,4 @@ cp ~/.functions .
 cp ~/.aliases .
 cp ~/.bash_prompt .
 cp ~/.gitconfig .
+cp ~/.brew .
