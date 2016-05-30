@@ -3,3 +3,4 @@ cd "$(dirname "$0")"
 cp ~/.vimrc .
 cp ~/.functions .
 cp ~/.aliases .
+cp ~/.bash_prompt .
