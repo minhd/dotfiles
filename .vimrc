@@ -61,6 +61,13 @@ set textwidth=0
 "Map semicolon to colon to avoid the stupid shift press
 nmap ; :
 
+"Map .. to :nohl
+nmap .. :nohl<CR>
+
+"Map pp to :set paste
+nmap pp :set paste<CR>
+set pastetoggle=<F2>
+
 "NerdTree
 nmap <silent> <C-D> :NERDTreeToggle<CR>
 

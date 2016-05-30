@@ -4,3 +4,4 @@ cp ~/.vimrc .
 cp ~/.functions .
 cp ~/.aliases .
 cp ~/.bash_prompt .
+cp ~/.gitconfig .

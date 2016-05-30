@@ -10,7 +10,10 @@ alias -- -="cd -"
 # My environment navigation
 alias minh="cd /var/www/html/workareas/minh"
 alias mcore="cd /var/www/html/workareas/minh/core"
-alias mdev="cd ~/dev/"
+alias d="cd ~/dev/"
+alias h="history"
+alias j="jobs"
+alias dl="cd ~/Downloads"
 
 # Common environment nagivation
 alias core="cd /var/www/core"
@@ -18,8 +21,6 @@ alias core="cd /var/www/core"
 # CentOS service alias
 alias svc="sudo /sbin/service"
 
-# be nice
-alias please=sudo
 alias hosts='sudo $EDITOR /etc/hosts' 
 
 # Sublime Text 3 for mac
@@ -66,7 +67,8 @@ alias gr='[ ! -z `git rev-parse --show-cdup` ] && cd `git rev-parse --show-cdup 
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias localip="ipconfig getifaddr en1"
-alias ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'"
+alias ips="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[0-9]\+\)\|[a-fA-F0-9:]\+\)' | awk '{ sub(/inet6? (addr:)? ?/, \"\"); print }'"
+
 
 # Enhanced WHOIS lookups
 alias whois="whois -h whois-servers.net"
@@ -103,3 +105,33 @@ alias rot13='tr a-zA-Z n-za-mN-ZA-M'
 
 # Empty the Trash on all mounted volumes and the main HDD OSX Only
 alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; rm -rfv ~/.Trash"
+
+# Make Grunt print stack traces by default
+command -v grunt > /dev/null && alias grunt="grunt --stack"
+
+# Intuitive map function
+# For example, to list all directories that contain a certain file:
+# find . -name .gitattributes | map dirname
+alias map="xargs -n1"
+
+# URL-encode strings
+alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1]);"'
+
+# Reload the shell (i.e. invoke as a login shell)
+alias reload="exec $SHELL -l"
+
+# Lock the screen (when going AFK)
+alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
+alias lock=afk
+
+# Get OS X Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
+alias update='sudo softwareupdate -i -a; brew update; brew upgrade --all; brew cleanup; npm install npm -g; npm update -g; sudo gem update --system; sudo gem update'
+
+# Get week number
+alias week='date +%V'
+
+# Always enable colored `grep` output
+# Note: `GREP_OPTIONS="--color=auto"` is deprecated, hence the alias usage.
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
