@@ -47,19 +47,6 @@ function server() {
 	python -c $'import SimpleHTTPServer;\nmap = SimpleHTTPServer.SimpleHTTPRequestHandler.extensions_map;\nmap[""] = "text/plain";\nfor key, value in map.items():\n\tmap[key] = value + ";charset=UTF-8";\nSimpleHTTPServer.test();' "$port"
 }
 
-# git log with per-commit cmd-clickable GitHub URLs (iTerm)
-function gf() {
-  local remote="$(git remote -v | awk '/^origin.*\(push\)$/ {print $2}')"
-  [[ "$remote" ]] || return
-  local user_repo="$(echo "$remote" | perl -pe 's/.*://;s/\.git$//')"
-  git log $* --name-status --color | awk "$(cat <<AWK
-    /^.*commit [0-9a-f]{40}/ {sha=substr(\$2,1,7)}
-    /^[MA]\t/ {printf "%s\thttps://github.com/$user_repo/blob/%s/%s\n", \$1, sha, \$2; next}
-    /.*/ {print \$0}
-AWK
-  )" | less -F
-}
-
 
 # Copy w/ progress
 cp_p () {
@@ -205,3 +192,9 @@ function a() {
 function tre() {
 	tree -aC -I '.git|node_modules|bower_components' --dirsfirst "$@" | less -FRNX;
 }
+
+# list the 5 most recently modified file in this directory
+function latest() {
+  find . -type f -print0 | xargs -0 stat -f "%m %N" | sort -rn | head -5 | cut -f2- -d" "
+}
+

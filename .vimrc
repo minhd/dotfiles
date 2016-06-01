@@ -61,11 +61,6 @@ set textwidth=0
 "Map semicolon to colon to avoid the stupid shift press
 nmap ; :
 
-"Map .. to :nohl
-nmap .. :nohl<CR>
-
-"Map pp to :set paste
-nmap pp :set paste<CR>
 set pastetoggle=<F2>
 
 "NerdTree
@@ -110,6 +105,7 @@ set noeb vb t_vb=               "Disable stupid annoying error sound
 set backspace=indent,eol,start  "Fix backspace
 set cmdheight=2                 "set command bar height
 set lazyredraw                  "Fix redraw issue
+
 "CM CM will show and hide line numbers
 nmap <C-M><C-M> :set invnumber<CR>
 
@@ -120,3 +116,6 @@ set ttymouse=xterm2
 
 "Save a file as root
 noremap <leader>W :w !sudo tee % > /dev/null<CR>
+
+" Cn to toggle relative number
+nnoremap <C-n> :set relativenumber<CR>
