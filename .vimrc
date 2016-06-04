@@ -20,9 +20,11 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'scrooloose/syntastic'
 Plugin 'mattn/emmet-vim'
 Plugin 'tomasr/molokai'
+Plugin 'jdkanani/vim-material-theme'
 Plugin 'mileszs/ack.vim'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'Raimondi/delimitMate'
+Plugin 'taglist.vim'
 
 call vundle#end()
 filetype plugin indent on
@@ -30,6 +32,11 @@ filetype plugin indent on
 "Syntax and coloring
 syntax on         "turn on syntax
 colors molokai    "best colorscheme ever!
+
+" Material color scheme
+set background=dark
+colorscheme material-theme
+
 "set number        "line numbers
 set incsearch     "search as you type
 set hlsearch      "highlight search
@@ -56,6 +63,8 @@ set shiftwidth=2 "set autoindent
 set nowrap
 set textwidth=0
 set wrap
+set linebreak
+set nolist
 
 "Map semicolon to colon to avoid the stupid shift press
 nmap ; :
@@ -91,6 +100,7 @@ set laststatus=2
 let g:airline_powerline_fonts = 1
 let g:Powerline_symbols='unicode'
 let g:airline#extensions#tabline#enabled = 1
+let g:airline_theme='bubblegum'
 
 "CtrlP
 let g:ctrlp_match_window = 'bottom,order:ttb'
@@ -113,7 +123,7 @@ set cmdheight=2                 "set command bar height
 set lazyredraw                  "Fix redraw issue
 
 "CM CM will show and hide line numbers
-nmap <C-M><C-M> :set invnumber<CR>
+nmap <leader>l :set invnumber<CR>
 
 "Support for mouse
 set ttyfast
