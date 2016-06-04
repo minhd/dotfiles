@@ -10,7 +10,6 @@
 "
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-
 Plugin 'gmarik/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/nerdtree'
@@ -53,15 +52,22 @@ set expandtab
 set smarttab
 set tabstop=2
 set softtabstop=2
-set shiftwidth=2
-"set autoindent
+set shiftwidth=2 "set autoindent
 set nowrap
 set textwidth=0
+set wrap
 
 "Map semicolon to colon to avoid the stupid shift press
 nmap ; :
+"Map leader to ,
+let mapleader = ","
+
+"Map ,space to nohl
+nnoremap <leader><space> :noh<cr>
 
 set pastetoggle=<F2>
+
+imap <C-c> <CR><Esc>O
 
 "NerdTree
 nmap <silent> <C-D> :NERDTreeToggle<CR>
