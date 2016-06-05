@@ -35,7 +35,7 @@ colors molokai    "best colorscheme ever!
 
 " Material color scheme
 set background=dark
-colorscheme material-theme
+"colorscheme material-theme
 
 "set number        "line numbers
 set incsearch     "search as you type
@@ -96,11 +96,40 @@ map <Leader>h <Plug>(easymotion-linebackward)
 nmap <silent> <C-C> :TlistToggle<CR>
 
 "Airline
+set guifont=Source\ Code\ Pro\ for\ Powerline "make sure to escape the spaces in the name properly"
 set laststatus=2
 let g:airline_powerline_fonts = 1
 let g:Powerline_symbols='unicode'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme='bubblegum'
+
+if !exists('g:airline_symbols')
+    let g:airline_symbols = {}
+endif
+
+" unicode symbols
+let g:airline_left_sep = '»'
+let g:airline_left_sep = '▶'
+let g:airline_right_sep = '«'
+let g:airline_right_sep = '◀'
+let g:airline_symbols.linenr = '␊'
+let g:airline_symbols.linenr = '␤'
+let g:airline_symbols.linenr = '¶'
+let g:airline_symbols.branch = '⎇'
+let g:airline_symbols.paste = 'ρ'
+let g:airline_symbols.paste = 'Þ'
+let g:airline_symbols.paste = '∥'
+let g:airline_symbols.whitespace = 'Ξ'
+
+" airline symbols
+let g:airline_left_sep = ''
+let g:airline_left_alt_sep = ''
+let g:airline_right_sep = ''
+let g:airline_right_alt_sep = ''
+let g:airline_symbols.branch = ''
+let g:airline_symbols.readonly = ''
+let g:airline_symbols.linenr = ''
+
 
 "CtrlP
 let g:ctrlp_match_window = 'bottom,order:ttb'
@@ -122,7 +151,7 @@ set backspace=indent,eol,start  "Fix backspace
 set cmdheight=2                 "set command bar height
 set lazyredraw                  "Fix redraw issue
 
-"CM CM will show and hide line numbers
+"leader l will show and hide line numbers
 nmap <leader>l :set invnumber<CR>
 
 "Support for mouse
@@ -130,8 +159,8 @@ set ttyfast
 set mouse=a
 set ttymouse=xterm2
 
-"Save a file as root
+"leaderW Save a file as root
 noremap <leader>W :w !sudo tee % > /dev/null<CR>
 
-" Cn to toggle relative number
+" CtrlN to toggle relative number
 nnoremap <C-n> :set relativenumber<CR>
