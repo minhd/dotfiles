@@ -6,3 +6,4 @@ cp ~/.aliases .
 cp ~/.bash_prompt .
 cp ~/.gitconfig .
 cp ~/.brew .
+cp ~/.bash_profile .
