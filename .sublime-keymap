@@ -1,0 +1,13 @@
+[
+    {"keys": ["alt+up"], "command": "expand_region"},
+    {"keys": ["alt+ctrl+a"], "command": "alignment" }, {
+        "keys": ["alt+down"],
+        "command": "expand_region",
+        "args": {"undo": true},
+        "context": [{ "key": "expand_region_soft_undo" }]
+    },
+    {"keys": ["shift+enter"], "command": "ace_jump_char"},
+    { "keys": ["super+shift+j"], "command": "move", "args": {"by": "lines", "forward": true} },
+    { "keys": ["super+shift+k"], "command": "move", "args": {"by": "lines", "forward": false} },
+]
+
