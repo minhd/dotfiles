@@ -9,5 +9,5 @@
     {"keys": ["shift+enter"], "command": "ace_jump_char"},
     { "keys": ["super+shift+j"], "command": "move", "args": {"by": "lines", "forward": true} },
     { "keys": ["super+shift+k"], "command": "move", "args": {"by": "lines", "forward": false} },
-]
 
+]

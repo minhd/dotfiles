@@ -1,0 +1,40 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"AceJump",
+		"AdvancedNewFile",
+		"Alignment",
+		"BracketHighlighter",
+		"DocBlockr",
+		"Emmet",
+		"ExpandRegion",
+		"Git",
+		"Gitignore",
+		"HTML Page Snippets",
+		"HTML Snippets",
+		"JsFormat",
+		"Laravel 5 Artisan",
+		"Laravel Blade Highlighter",
+		"LESS",
+		"Markdown Preview",
+		"Material Theme",
+		"Origami",
+		"Package Control",
+		"PHP Companion",
+		"PHP Completions Kit",
+		"PHPUnit",
+		"rsub",
+		"SideBarEnhancements",
+		"SublimeCodeIntel",
+		"SublimeLinter",
+		"SublimeLinter-php",
+		"Unity Completions Light",
+		"Unity3D",
+		"Vagrant",
+		"Vue Syntax Highlight"
+	]
+}
