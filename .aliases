@@ -15,6 +15,8 @@ alias h="history"
 alias j="jobs"
 alias dl="cd ~/Downloads"
 
+alias art="php artisan"
+
 # Common environment nagivation
 alias core="cd /var/www/core"
 

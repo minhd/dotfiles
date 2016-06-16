@@ -2,8 +2,9 @@
 cd "$(dirname "$0")"
 git pull
 function doIt() {
-	rsync --exclude ".git/" --exclude ".DS_Store" --exclude "sync.sh" --exclude "README.md" -av . ~
-  source ~/.bash_profile;
+  for file in {vimrc,functions,aliases,bash_prompt,gitconfig,bash_profile}; do
+  	cp $file ~/	
+  done
 }
 if [ "$1" == "--force" -o "$1" == "-f" ]; then
 	doIt

@@ -10,6 +10,7 @@
 "
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
+
 Plugin 'gmarik/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/nerdtree'
@@ -20,11 +21,11 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'scrooloose/syntastic'
 Plugin 'mattn/emmet-vim'
 Plugin 'tomasr/molokai'
-Plugin 'jdkanani/vim-material-theme'
 Plugin 'mileszs/ack.vim'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'Raimondi/delimitMate'
 Plugin 'taglist.vim'
+Plugin 'tpope/vim-vinegar'
 
 call vundle#end()
 filetype plugin indent on
@@ -33,9 +34,7 @@ filetype plugin indent on
 syntax on         "turn on syntax
 colors molokai    "best colorscheme ever!
 
-" Material color scheme
 set background=dark
-"colorscheme material-theme
 
 "set number        "line numbers
 set incsearch     "search as you type
@@ -45,7 +44,6 @@ set cursorline    "display current line
 set wildmenu      "display possible menu
 set showtabline=2 "always show tab line
 set history=10000 "keep alot of history
-
 set ignorecase smartcase  "case insensitive search
 
 "Files, backup, swap
@@ -71,6 +69,11 @@ nmap ; :
 "Map leader to ,
 let mapleader = ","
 
+"Make it easy to edit the Vimrc file.
+nmap <Leader>ev :tabedit $MYVIMRC<cr>
+
+nmap <Leader>w :w<cr>
+
 "Map ,space to nohl
 nnoremap <leader><space> :noh<cr>
 
@@ -78,8 +81,10 @@ set pastetoggle=<F2>
 
 imap <C-c> <CR><Esc>O
 
+
 "NerdTree
 nmap <silent> <C-D> :NERDTreeToggle<CR>
+let NERDTreeHijackNetrw = 0
 
 "Easy Motion
 let g:EasyMotion_do_mapping = 0
@@ -136,11 +141,13 @@ let g:ctrlp_match_window = 'bottom,order:ttb'
 let g:ctrlp_switch_buffer = 0
 let g:ctrlp_working_path_mode = 0
 let g:ctrlp_show_hidden = 1
+let g:ctrlp_match_window = "top,order:ttb,min:1,max:30,results:30"
 let g:ctrlp_prompt_mappings = {
     \ 'AcceptSelection("e")': ['<c-t>'],
     \ 'AcceptSelection("t")': ['<cr>', '<2-LeftMouse>'],
     \ }
-
+nmap <C-r> :CtrlPBufTag<cr>
+nmap <C-e> :CtrlPMRUFiles<cr>
 "Random Fixes
 let g:ctrlp_map = '<c-p>'
 nmap <c-s> :w<CR>
