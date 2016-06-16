@@ -2,7 +2,7 @@
 cd "$(dirname "$0")"
 git pull
 function doIt() {
-  for file in {vimrc,functions,aliases,bash_prompt,gitconfig,bash_profile}; do
+  for file in .{vimrc,functions,aliases,bash_prompt,gitconfig,bash_profile}; do
   	cp $file ~/	
   done
 }
