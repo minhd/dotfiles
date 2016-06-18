@@ -9,5 +9,9 @@
     {"keys": ["shift+enter"], "command": "ace_jump_char"},
     { "keys": ["super+shift+j"], "command": "move", "args": {"by": "lines", "forward": true} },
     { "keys": ["super+shift+k"], "command": "move", "args": {"by": "lines", "forward": false} },
-
+    { "keys": ["super+shift+a"], "command": "show_at_center"},
+    { "keys": ["super+shift+e"], "command": "expand_fqcn" },
+    { "keys": ["super+shift+i"], "command": "import_namespace" },
+    { "keys": ["super+shift+r"], "command": "implement" },
+    { "keys": ["alt+."], "command": "reveal_in_side_bar" }
 ]
