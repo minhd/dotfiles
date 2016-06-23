@@ -27,3 +27,6 @@ complete -W "NSGlobalDomain" defaults
 
 # Path for composer
 export PATH="$PATH:$HOME/.composer/vendor/bin"
+
+# autojump
+[[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh

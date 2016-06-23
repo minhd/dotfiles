@@ -73,6 +73,7 @@ let mapleader = ","
 nmap <Leader>ev :tabedit $MYVIMRC<cr>
 
 nmap <Leader>w :w<cr>
+nmap <Leader>q :qa<cr>
 
 "Map ,space to nohl
 nnoremap <leader><space> :noh<cr>

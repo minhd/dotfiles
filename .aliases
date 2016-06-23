@@ -12,10 +12,11 @@ alias minh="cd /var/www/html/workareas/minh"
 alias mcore="cd /var/www/html/workareas/minh/core"
 alias d="cd ~/dev/"
 alias h="history"
-alias j="jobs"
+#alias j="jobs"
 alias dl="cd ~/Downloads"
 
 alias art="php artisan"
+alias subb="cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/"
 
 # Common environment nagivation
 alias core="cd /var/www/core"
