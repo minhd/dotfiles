@@ -5,7 +5,7 @@
 	"caret_extra_top": 2,
 	"caret_extra_width": 2,
 	"caret_style": "phase",
-	"color_scheme": "Packages/Material Theme/schemes/Material-Theme-Darker.tmTheme",
+	"color_scheme": "Packages/Material Theme/schemes/Material-Theme.tmTheme",
 	"drag_text": false,
 	"fade_fold_buttons": false,
 	"font_options":
@@ -25,6 +25,7 @@
 		"draw_normal",
 		"draw_active"
 	],
+	"line_numbers": true,
 	"line_padding_bottom": 5,
 	"line_padding_top": 5,
 	"overlay_scroll_bars": "enabled",
@@ -35,7 +36,7 @@
 		120
 	],
 	"show_panel_on_build": false,
-	"theme": "Material-Theme-Darker.sublime-theme",
+	"theme": "Material-Theme.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
 	"word_wrap": true
