@@ -34,7 +34,7 @@
 		80,
 		120
 	],
-	"show_panel_on_build": false,
+	"show_panel_on_build": true,
 	"theme": "Material-Theme-Darker.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
